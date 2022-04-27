@@ -7,7 +7,7 @@
 
 if game.PlaceId == 155615604 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Prison Life (BETA)", "Synapse")
+    local Window = Library.CreateLib("FrkHub (BETA)", "Synapse")
 
     -- MAIN
     local Main = Window:NewTab("Guns")
@@ -52,7 +52,7 @@ if game.PlaceId == 155615604 then
     end)
 elseif game.PlaceId == 3956818381 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Ninja Legends (TESTING)", "Synapse")
+    local Window = Library.CreateLib("FrkHub (BETA)", "Synapse")
 
     -- MAIN
     local Main = Window:NewTab("Auto Farm")
@@ -123,7 +123,7 @@ end
 
 if game.PlaceId == 9049840490 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-    local Window = Library.CreateLib("Sonic Speed Simulator (TESTING)", "Synapse")
+    local Window = Library.CreateLib("FrkHub (BETA)", "Synapse")
     local Main = Window:NewTab("Auto Farm")
     local MainSection = Main:NewSection("Made By frkfx")
  
