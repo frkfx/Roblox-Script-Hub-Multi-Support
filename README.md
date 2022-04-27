@@ -5,8 +5,7 @@
 --Sonic Speed Simulator
 --More Game Support Soon
 
---Hub
-
+-- HUB
 if game.PlaceId == 155615604 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("Prison Life (BETA)", "Synapse")
