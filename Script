@@ -5,6 +5,47 @@
 --Sonic Speed Simulator
 --More Game Support Soon
 
+--UNIVERSAL
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("FrkHub Universal (BETA)", "Synapse")
+
+local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+
+    PlayerSection:NewSlider("Walkspeed", "Increases Walkspeed", 250, 16, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+
+    PlayerSection:NewSlider("Jump Power", "Increases Jump Power", 250, 50, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+end)
+
+-- MAIN
+local Main = Window:NewTab("Scripts")
+local MainSection = Main:NewSection("Universal Scripts")
+ MainSection:NewButton("Ez Hub", "Loads Ez Hub", function(v)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+end)
+
+ MainSection:NewButton("Infinite Yeild", "Loads Infinite Yeild", function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
+end)
+
+local MainSection = Main:NewSection("Supported Games Only")
+MainSection:NewButton("Dark Hub ", "Loads Dark Hub", function(v)
+
+SupportedGames=game:GetService('HttpService'):JSONDecode(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/SupportedGames'));
+for _,v in pairs(SupportedGames)do
+    if game.PlaceId==tonumber(v)then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/'.._))()
+    end;
+  end;
+end)
+
+MainSection:NewButton("VG Hub", "Loads VG Hub", function(v)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end)
+--Prison
 if game.PlaceId == 155615604 then
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("FrkHub (BETA)", "Synapse")
@@ -213,3 +254,37 @@ game:GetService("ReplicatedStorage").Knit.Services.WorldCurrencyService.RE.Picku
 end)
 end
  
+if game.PlaceId == 1345139196 then
+local StarterGui = game:GetService("StarterGui")
+
+local Notifications = {
+	"Gave Up On This Game",
+	
+}
+
+local TimeBetweenNotifications = 2 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+
+while true do
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+		
+		StarterGui:SetCore("SendNotification", {
+			Title = "FrkHub",
+			Text = Notification,
+			Duration = 2
+		})
+		
+		wait(10000000000)
+	end
+end
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("FrkHub (BETA)", "Synapse")
+local Main = Window:NewTab("Auto Farms")
+    local MainSection = Main:NewSection("Made By frkfx")
+MainSection:NewButton("Auto Dig", "Auto Digs For You (Broken)", function(v)
+end)
+local Main = Window:NewTab("Other Scritps")
+    local MainSection = Main:NewSection("Made By frkfx")
+MainSection:NewButton("DarkHub", "Supported Script", function(v)
+end)
+end
