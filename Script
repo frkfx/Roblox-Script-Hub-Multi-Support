@@ -68,6 +68,34 @@ local function callback(Text)
    MainSection:NewButton("VG Hub", "Loads VG Hub", function(v)
    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
    end)
+
+MainSection:NewButton("Skyas GG", "Loads Skyas GG", function(v)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SkaysGG-2095"))()
+end)
+
+   local Main = Window:NewTab("FE")
+   local MainSection = Main:NewSection("FE Scripts")
+   MainSection:NewButton("FE Trolling GUI ", "Credits To MasterMZ", function(v)
+   loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
+   end)
+
+   MainSection:NewButton("FE Nullioner ", "Credits To MasterMZ", function(v)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/Asdfaf"))()
+   end)
+
+MainSection:NewButton("Sheds Bypasser ", "Loads Sheds Bypasser", function(v)
+   loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+   end)
+
+MainSection:NewButton("FE Onepunch Man ", "Loads One Punch Man FE", function(v)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/safafasfsaf", true))()
+   end)
+
+MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/kdhaGFKjhf", true))()
+   end)
+
+
    --Prison
    if game.PlaceId == 155615604 then
        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
