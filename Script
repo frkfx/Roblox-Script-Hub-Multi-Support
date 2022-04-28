@@ -18,7 +18,7 @@ local function callback(Text)
    NotificationBindable.OnInvoke = callback
    --
    game.StarterGui:SetCore("SendNotification",  {
-    Title = "FrkHub";  
+    Title = "FrkZ";  
     Text = "Loaded In Succsessfully";
     Icon = "";
     Duration = 100;
@@ -30,7 +30,7 @@ local function callback(Text)
    wait(1)
    --UNIVERSAL
    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-   local Window = Library.CreateLib("FrkHub Universal (BETA)", "Ocean")
+   local Window = Library.CreateLib("FrkZ (BETA)", "GrapeTheme")
    
    local Player = Window:NewTab("Player")
        local PlayerSection = Player:NewSection("Player")
@@ -103,7 +103,7 @@ MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
    --Prison
    if game.PlaceId == 155615604 then
        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-       local Window = Library.CreateLib("FrkHub (BETA)", "Ocean")
+       local Window = Library.CreateLib("FrkZ (BETA)", "GrapeTheme")
    
        -- MAIN
        local Main = Window:NewTab("Guns")
@@ -148,7 +148,7 @@ MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
        end)
    elseif game.PlaceId == 3956818381 then
        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-       local Window = Library.CreateLib("FrkHub (BETA)", "Ocean")
+       local Window = Library.CreateLib("FrkHub (BETA)", "GrapeTheme")
    
        -- MAIN
        local Main = Window:NewTab("Auto Farm")
@@ -235,7 +235,7 @@ MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
            local Notification = Notifications[i]
            
            StarterGui:SetCore("SendNotification", {
-               Title = "FrkHub",
+               Title = "FrkZ",
                Text = Notification,
                Duration = 2
            })
@@ -245,7 +245,7 @@ MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
    end
    wait(2)
    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-       local Window = Library.CreateLib("FrkHub (BETA)", "Ocean")
+       local Window = Library.CreateLib("FrkZ (BETA)", "GrapeTheme")
    local Main = Window:NewTab("Auto Farms")
        local MainSection = Main:NewSection("Made By frkfx")
    MainSection:NewButton("Auto Dig", "Auto Digs For You (Broken)", function(v)
