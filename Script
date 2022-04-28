@@ -80,7 +80,7 @@ end)
    end)
 
    MainSection:NewButton("FE Nullioner ", "Credits To MasterMZ", function(v)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/Asdfaf"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/aiskuyhfgvbaa"))()
    end)
 
 MainSection:NewButton("Sheds Bypasser ", "Loads Sheds Bypasser", function(v)
@@ -92,7 +92,7 @@ MainSection:NewButton("FE Onepunch Man ", "Loads One Punch Man FE", function(v)
    end)
 
 MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/kdhaGFKjhf", true))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/njahndjon", true))()
    end)
 
 
