@@ -73,6 +73,10 @@ MainSection:NewButton("Skyas GG", "Loads Skyas GG", function(v)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SkaysGG-2095"))()
 end)
 
+MainSection:NewButton("Funky Friday", "Loads Funky Friday AutoPlay", function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+end)
+
    local Main = Window:NewTab("FE")
    local MainSection = Main:NewSection("FE Scripts")
    MainSection:NewButton("FE Trolling GUI ", "Credits To MasterMZ", function(v)
