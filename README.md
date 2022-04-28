@@ -11,3 +11,7 @@
 
 !REMEMBER FRKHUB IS STILL IN ITS BETA STAGE.
 !VERSION 1.0 EXPECTED BY 2ND OF MAY
+
+Check Out The Website-
+https://frkhub.mystrikingly.com/
+Still in progress sorry for the shitty design
