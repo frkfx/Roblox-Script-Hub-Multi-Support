@@ -62,7 +62,7 @@ local function callback(Text)
 loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
 end)
 
-  MainSection:NewButton("NTO Admin", "Loads NTO Admin, function(v)
+  MainSection:NewButton("NTO Admin", "Loads NTO Admin", function(v)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/wsdafa%20sdfasffada"))(); 
 end)
 
