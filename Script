@@ -54,6 +54,10 @@ local function callback(Text)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
    end)
    
+      MainSection:NewButton("Owl Hub", "Loads Owl Hub", function(v)
+loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
+end)
+   
    local MainSection = Main:NewSection("Supported Games Only")
    MainSection:NewButton("Dark Hub ", "Loads Dark Hub", function(v)
    
@@ -64,10 +68,7 @@ local function callback(Text)
        end;
      end;
    end)
-  
-   MainSection:NewButton("Owl Hub", "Loads Owl Hub", function(v)
-loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
-end)
+ 
    
    MainSection:NewButton("VG Hub", "Loads VG Hub", function(v)
    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
