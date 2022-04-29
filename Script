@@ -95,6 +95,10 @@ end)
 MainSection:NewButton("Sheds Bypasser ", "Loads Sheds Bypasser", function(v)
    loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
    end)
+   
+MainSection:NewButton("Sheds Bypasser ", "Loads Sheds Bypasser", function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/killermaster9999mega/UTG-V3/main/FE%20UTG%20V3.txt"))()
+end)
 
 MainSection:NewButton("FE Onepunch Man ", "Loads One Punch Man FE", function(v)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/safafasfsaf", true))()
