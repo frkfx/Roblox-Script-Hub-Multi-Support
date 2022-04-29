@@ -100,6 +100,10 @@ MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
    end)
 
 
+MainSection:NewButton("Owl Hub", "Loads Owl Hub", function(v)
+loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
+end)
+
    --Prison
    if game.PlaceId == 155615604 then
        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
