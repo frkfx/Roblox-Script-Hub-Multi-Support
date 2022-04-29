@@ -61,7 +61,11 @@ local function callback(Text)
       MainSection:NewButton("Owl Hub", "Loads Owl Hub", function(v)
 loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
 end)
-   
+
+  MainSection:NewButton("NTO Admin", "Loads NTO Admin, function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/wsdafa%20sdfasffada"))(); 
+end)
+
    local MainSection = Main:NewSection("Supported Games Only")
    MainSection:NewButton("Dark Hub ", "Loads Dark Hub", function(v)
    
