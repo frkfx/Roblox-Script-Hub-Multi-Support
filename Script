@@ -54,6 +54,10 @@ local function callback(Text)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
    end)
    
+   MainSection:NewButton("FatesAdmin", "Loads Fates Admin", function(v)
+    loadstring(game:HttpGet(" https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua",true))()
+    end)
+   
       MainSection:NewButton("Owl Hub", "Loads Owl Hub", function(v)
 loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
 end)
