@@ -113,6 +113,20 @@ MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
    end)
 
 
+ local Player = Window:NewTab("Credits")
+       local PlayerSection = Player:NewSection("Special Thanks To")
+Section:NewLabel("frkfx")
+Section:NewLabel("Infinite_Speedy")
+end)
+
+local Player = Window:NewTab("Offical Testers")
+       local PlayerSection = Player:NewSection("Special Thanks To")
+Section:NewLabel("FredwardCring")
+Section:NewLabel("ConasCring")
+end)
+
+
+
    --Prison
    if game.PlaceId == 155615604 then
        local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
