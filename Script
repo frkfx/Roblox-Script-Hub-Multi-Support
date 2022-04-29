@@ -112,20 +112,16 @@ MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
    loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/njahndjon", true))()
    end)
 
-
- local Player = Window:NewTab("Credits")
-       local PlayerSection = Player:NewSection("Special Thanks To")
-Section:NewLabel("frkfx")
-Section:NewLabel("Infinite_Speedy")
-end)
-
-local Player = Window:NewTab("Offical Testers")
-       local PlayerSection = Player:NewSection("Special Thanks To")
-Section:NewLabel("FredwardCring")
-Section:NewLabel("ConasCring")
-end)
+local Main = Window:NewTab("Offical Testers")
+local MainSection = Main:NewSection("Special Thanks To")
+MainSection:NewLabel("FredwardCring")
+MainSection:NewLabel("ConasCring")
 
 
+local Main = Window:NewTab("Developers")
+   local MainSection = Main:NewSection("Huge Thanks To")
+MainSection:NewLabel("frkfx")
+MainSection:NewLabel("Infinite_Speedy")
 
    --Prison
    if game.PlaceId == 155615604 then
