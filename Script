@@ -96,7 +96,7 @@ MainSection:NewButton("Sheds Bypasser ", "Loads Sheds Bypasser", function(v)
    loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
    end)
    
-MainSection:NewButton("Sheds Bypasser ", "Loads Sheds Bypasser", function(v)
+MainSection:NewButton("Trolling UTG ", "Loads Trolling GUI", function(v)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/killermaster9999mega/UTG-V3/main/FE%20UTG%20V3.txt"))()
 end)
 
