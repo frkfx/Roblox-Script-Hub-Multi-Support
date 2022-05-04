@@ -21,7 +21,7 @@ local function callback(Text)
     Title = "FrkZ";  
     Text = "Loaded In Succsessfully";
     Icon = "";
-    Duration = 100;
+    Duration = 1000;
     Button1 = "Ok";
     Button2 = "Cancel";
     Callback = NotificationBindable;
