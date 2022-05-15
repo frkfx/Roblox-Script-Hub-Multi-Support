@@ -1,11 +1,3 @@
---Made By frkfx
---Working Games
---Prison Life
---Ninja Legends
---Sonic Speed Simulator
---More Game Support Soon
-
---Notify
 local function callback(Text)
     if Text == "Ok" then
      print ("Answer")
@@ -19,262 +11,241 @@ local function callback(Text)
    --
    game.StarterGui:SetCore("SendNotification",  {
     Title = "FrkZ";  
-    Text = "Loaded In Succsessfully";
+    Text = "FrkZ Loaded";
     Icon = "";
-    Duration = 1000;
+    Duration = 100;
     Button1 = "Ok";
     Button2 = "Cancel";
     Callback = NotificationBindable;
    })
    
    wait(1)
-   --UNIVERSAL
-   local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-   local Window = Library.CreateLib("FrkZ (BETA)", "DarkTheme")
-   
-   local Player = Window:NewTab("Player")
-       local PlayerSection = Player:NewSection("Player")
-   
-       PlayerSection:NewSlider("Walkspeed", "Increases Walkspeed", 250, 16, function(v)
-           game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
-       end)
-   
-       PlayerSection:NewSlider("Jump Power", "Increases Jump Power", 250, 50, function(v)
-           game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
-   end)
-   
-   -- MAIN
-   local Main = Window:NewTab("Scripts")
-   local MainSection = Main:NewSection("Universal Scripts")
-    MainSection:NewButton("Ez Hub", "Loads Ez Hub", function(v)
-   loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
-   end)
-   
-    MainSection:NewButton("Infinite Yeild", "Loads Infinite Yeild", function(v)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
-   end)
-   
-   MainSection:NewButton("FatesAdmin", "Loads Fates Admin", function(v)
-    loadstring(game:HttpGet(" https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua",true))()
-    end)
-   
-      MainSection:NewButton("Owl Hub", "Loads Owl Hub", function(v)
-loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
-end)
 
-  MainSection:NewButton("NTO Admin", "Loads NTO Admin", function(v)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/TwomadJR/nto/main/admiin"))();
-end)
 
-   local MainSection = Main:NewSection("Supported Games Only")
-   MainSection:NewButton("Dark Hub ", "Loads Dark Hub", function(v)
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("FRKZ V1.0")
+
+local serv = win:Server("Player", "")
+local sldrs = serv:Channel("Walkspeed")
+
+local sldr =
+    sldrs:Slider(
+    "Changes The Player Walspeed",
+    0,
+    250,
+    16,
+    function(v)
+        print(v)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+       
+    end
+)
+
+local sldrs = serv:Channel("JumpPower")
+
+local sldr =
+    sldrs:Slider(
+    "Changes The Player JumpPower",
+    0,
+    250,
+    50,
+    function(v)
+        print(v)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+       
+    end
+)
+
+
+local serv = win:Server("Scripts", "")
+
+local btns = serv:Channel("Universal Scirpts")
+
+
+btns:Button(
+    "Remote Spy",
+    function(v)
+        oadstring(game:HttpGet(('https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub/main/dasfadasd'),true))()
    
-   SupportedGames=game:GetService('HttpService'):JSONDecode(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/SupportedGames'));
-   for _,v in pairs(SupportedGames)do
-       if game.PlaceId==tonumber(v)then
-           loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/'.._))()
-       end;
-     end;
-   end)
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+btns:Button(
+    "Ez Hub",
+    function(v)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+   
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+
+btns:Button(
+    "Fates Admin",
+    function(v)
+        loadstring(game:HttpGet(" https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua",true))()
+   
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+btns:Button(
+    "Infinite Yeild",
+    function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
+   
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+btns:Button(
+    "Owl Hub",
+    function(v)
+    loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
+   
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+
+btns:Button(
+    "NTO Admin",
+    function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/TwomadJR/nto/main/admiin"))();
+   
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+local btns = serv:Channel("Supported Games Only")
+
+btns:Button(
+    "Dark Hub",
+    function(v)
+        SupportedGames=game:GetService('HttpService'):JSONDecode(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/SupportedGames'));
+for _,v in pairs(SupportedGames)do
+    if game.PlaceId==tonumber(v)then
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/'.._))()
+    end;
+end;
+
+   
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+btns:Button(
+    "VG Hub",
+    function(v)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
  
    
-   MainSection:NewButton("VG Hub", "Loads VG Hub", function(v)
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
-   end)
-
-MainSection:NewButton("Skyas GG", "Loads Skyas GG", function(v)
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SkaysGG-2095"))()
-end)
-
-MainSection:NewButton("Funky Friday", "Loads Funky Friday AutoPlay", function(v)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
-end)
-
-   local Main = Window:NewTab("FE")
-   local MainSection = Main:NewSection("FE Scripts")
-   MainSection:NewButton("FE Trolling GUI ", "Credits To MasterMZ", function(v)
-   loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
-   end)
-
-   MainSection:NewButton("FE Nullioner ", "Credits To MasterMZ", function(v)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/aiskuyhfgvbaa"))()
-   end)
-
-MainSection:NewButton("Sheds Bypasser ", "Loads Sheds Bypasser", function(v)
-   loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
-   end)
-   
-MainSection:NewButton("Trolling UTG ", "Loads Trolling GUI", function(v)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/killermaster9999mega/UTG-V3/main/FE%20UTG%20V3.txt"))()
-end)
-
-MainSection:NewButton("FE Onepunch Man ", "Loads One Punch Man FE", function(v)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/safafasfsaf", true))()
-   end)
-
-MainSection:NewButton("Aspect Hub ", "Loads Aspect Hub", function(v)
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/njahndjon", true))()
-   end)
-
-local Main = Window:NewTab("Offical Testers")
-local MainSection = Main:NewSection("Special Thanks To")
-MainSection:NewLabel("FredwardCring")
-MainSection:NewLabel("ConasCring")
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
 
 
-local Main = Window:NewTab("Developers")
-   local MainSection = Main:NewSection("Huge Thanks To")
-MainSection:NewLabel("frkfx")
-MainSection:NewLabel("Infinite_Speedy")
 
-   --Prison
-   if game.PlaceId == 155615604 then
-       local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-       local Window = Library.CreateLib("FrkZ (BETA)", "GrapeTheme")
+btns:Button(
+    "SkyasGG",
+    function(v)
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SkaysGG-2095"))()
+ 
    
-       -- MAIN
-       local Main = Window:NewTab("Guns")
-       local MainSection = Main:NewSection("Gun And Mod")
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+
+btns:Button(
+    "Funky Friday",
+    function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
+ 
    
-       MainSection:NewDropdown("Gun Grabber", "Grabs The Gun", {"M9", "Remington 870", "AK-47"}, function(v)
-           local A_1 = game:GetService("Workspace")["Prison_ITEMS"].giver[v].ITEMPICKUP
-           local Event = game:GetService("Workspace").Remote.ItemHandler
-           Event:InvokeServer(A_1)
-       end)
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+local serv = win:Server("FE Scripts", "")
+local btns = serv:Channel("Scripts")
+
+
+btns:Button(
+    "Trolling GUI",
+    function(v)
+        loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
+ 
    
-       MainSection:NewDropdown("Gun Mod", "Mods The Gun", {"M9", "Remington 870", "AK-47"}, function(v)
-           local module = nil
-           if game:GetService("Players").LocalPlayer.Backpack:FindFirstChild(v) then
-               module = require(game:GetService("Players").LocalPlayer.Backpack[v].GunStates)
-           elseif game:GetService("Players").LocalPlayer.Character:FindFirstChild(v) then
-               module = require(game:GetService("Players").LocalPlayer.Character[v].GunStates)
-           end
-           if module ~= nil then
-               module["MaxAmmo"] = math.huge
-               module["CurrentAmmo"] = math.huge
-               module["StoredAmmo"] = math.huge
-               module["FireRate"] = 0.000001
-               module["Spread"] = 0
-               module["Range"] = math.huge
-               module["Bullets"] = 10
-               module["ReloadTime"] = 0.000001
-               module["AutoFire"] = true
-           end
-       end)
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+
+
+btns:Button(
+    "Nullioner",
+    function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/aiskuyhfgvbaa"))()
+ 
    
-       -- PLAYER
-       local Player = Window:NewTab("Player")
-       local PlayerSection = Player:NewSection("Player")
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+
+
+btns:Button(
+    "Sheds Bypasser",
+    function(v)
+        loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+ 
    
-       PlayerSection:NewSlider("Walkspeed", "Increases Walkspeed", 250, 16, function(v)
-           game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
-       end)
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
    
-       PlayerSection:NewSlider("Jump Power", "Increases Jump Power", 250, 50, function(v)
-           game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
-       end)
-   elseif game.PlaceId == 3956818381 then
-       local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-       local Window = Library.CreateLib("FrkHub (BETA)", "GrapeTheme")
+ 
+btns:Button(
+    "Trolling UTG",
+    function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/killermaster9999mega/UTG-V3/main/FE%20UTG%20V3.txt"))()
+ 
    
-       -- MAIN
-       local Main = Window:NewTab("Auto Farm")
-       local MainSection = Main:NewSection("Auto Farm")
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
    
-       MainSection:NewToggle("Auto Swing", "Auto Swings", function(v)
-           getgenv().autoswing = v
-           while true do
-               if not getgenv().autoswing then return end
-               for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-                   if v:FindFirstChild("ninjitsuGain") then
-                       game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
-                       break
-                   end
-               end
-               local A_1 = "swingKatana"
-               local Event = game:GetService("Players").LocalPlayer.ninjaEvent
-               Event:FireServer(A_1)
-               wait(0.1)
-           end
-       end)
+
+btns:Button(
+    "One Pucnh Man",
+    function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/safafasfsaf", true))()
+ 
    
-       MainSection:NewToggle("Auto Sell", "Sells For You", function(v)
-           getgenv().autosell = v
-           while true do
-               if getgenv().autoswing == false then return end
-               game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-               wait(0.1)
-               game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = CFrame.new(0,0,0)
-               wait(0.1)
-           end
-       end)
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+btns:Button(
+    "Aspect Hub",
+    function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/njahndjon", true))()
+ 
    
-       MainSection:NewButton("Unlock all islands", "Unlocks all islands", function()
-           local oldcframe = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-           for _,v in pairs(game:GetService("Workspace").islandUnlockParts:GetChildren()) do
-               game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
-               wait(0.1)
-           end
-           wait(0.1)
-           game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldcframe
-       end)
-       
-       MainSection:NewToggle("Auto Buy Swords", "Buys All Affordable Swords", function(v)
-           getgenv().buyswords = v
-           while true do
-               if not getgenv().buyswords then return end
-               local A_1 = "buyAllSwords"
-               local A_2 = "Inner Peace Island"
-               local Event = game:GetService("Players").LocalPlayer.ninjaEvent
-               Event:FireServer(A_1, A_2)
-               wait(0.5)
-           end
-       end)
-   
-       MainSection:NewToggle("Auto Buy Belts", "Buys All Affordable Belts", function(v)
-           getgenv().buybelts = v
-           while true do
-               if not getgenv().buybelts then return end
-               local A_1 = "buyAllBelts"
-               local A_2 = "Inner Peace Island"
-               local Event = game:GetService("Players").LocalPlayer.ninjaEvent
-               Event:FireServer(A_1, A_2)
-               wait(0.5)
-           end
-       end)
-   end
-   
-   
-   
-    
-   if game.PlaceId == 1345139196 then
-   local StarterGui = game:GetService("StarterGui")
-   
-   local Notifications = {
-       "Gave Up On This Game",
-       
-   }
-   
-   local TimeBetweenNotifications = 2 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
-   
-   while true do
-       for i = 1, #Notifications do
-           local Notification = Notifications[i]
-           
-           StarterGui:SetCore("SendNotification", {
-               Title = "FrkZ",
-               Text = Notification,
-               Duration = 2
-           })
-           
-           wait(10000000000)
-       end
-   end
-   wait(2)
-   local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-       local Window = Library.CreateLib("FrkZ (BETA)", "GrapeTheme")
-   local Main = Window:NewTab("Auto Farms")
-       local MainSection = Main:NewSection("Made By frkfx")
-   MainSection:NewButton("Auto Dig", "Auto Digs For You (Broken)", function(v)
-   end)
-   end
+        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+    end
+)
+
+local serv = win:Server("Credits", "")
+local lbls = serv:Channel("Developers")
+
+lbls:Label("frkfx")
+lbls:Label("Infinite_Speedy")
+
+local lbls = serv:Channel("Offical Testers")
+lbls:Label("FredwardCring")
+lbls:Label("ConasCring")
