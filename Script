@@ -127,8 +127,6 @@ local btns = serv:Channel("Supported Games Only")
 btns:Button(
     "Dark Hub",
     function(v)
-  loadstring(game:HttpGet('https://raw.githubusercontent.com/1e17/Luau-Misc/main/dark-hub-bypass/okbuddy.lua'))()
-wait(2)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
 
    
