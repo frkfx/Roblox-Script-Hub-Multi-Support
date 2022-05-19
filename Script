@@ -1,3 +1,4 @@
+
 local function callback(Text)
     if Text == "Ok" then
      print ("Answer")
@@ -22,10 +23,11 @@ local function callback(Text)
    wait(1)
 
 
-local DiscordLib =
+local DiscordLib = 
     loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
 
-local win = DiscordLib:Window("FRKZ V1.0")
+
+local win = DiscordLib:Window("FrkZ")
 
 local serv = win:Server("Player", "")
 local sldrs = serv:Channel("Walkspeed")
@@ -69,7 +71,7 @@ btns:Button(
     function(v)
         oadstring(game:HttpGet(('https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub/main/dasfadasd'),true))()
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -78,7 +80,7 @@ btns:Button(
     function(v)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -88,7 +90,7 @@ btns:Button(
     function(v)
         loadstring(game:HttpGet(" https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua",true))()
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -97,7 +99,7 @@ btns:Button(
     function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -106,7 +108,7 @@ btns:Button(
     function(v)
     loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -116,7 +118,7 @@ btns:Button(
     function(v)
         loadstring(game:HttpGet("https://raw.githubusercontent.com/TwomadJR/nto/main/admiin"))();
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -133,7 +135,7 @@ for _,v in pairs(SupportedGames)do
 end;
 
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -143,7 +145,7 @@ btns:Button(
     loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -155,7 +157,7 @@ btns:Button(
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SkaysGG-2095"))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -166,7 +168,7 @@ btns:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -180,7 +182,7 @@ btns:Button(
         loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -192,7 +194,7 @@ btns:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/aiskuyhfgvbaa"))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -204,7 +206,7 @@ btns:Button(
         loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
    
@@ -215,7 +217,7 @@ btns:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/killermaster9999mega/UTG-V3/main/FE%20UTG%20V3.txt"))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
    
@@ -226,7 +228,7 @@ btns:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/safafasfsaf", true))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -236,7 +238,18 @@ btns:Button(
         loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/njahndjon", true))()
  
    
-        DiscordLib:Notification("FrkZ", "Loaded", "Ok")
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
+    end
+)
+
+
+btns:Button(
+    "OpFinality",
+    function(v)
+        loadstring(game:HttpGet(('https://pastebin.com/raw/3axt0ia1'),true))()
+ 
+   
+        DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
 )
 
@@ -249,3 +262,6 @@ lbls:Label("Infinite_Speedy")
 local lbls = serv:Channel("Offical Testers")
 lbls:Label("FredwardCring")
 lbls:Label("ConasCring")
+
+
+
