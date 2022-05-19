@@ -106,7 +106,7 @@ btns:Button(
 btns:Button(
     "Owl Hub",
     function(v)
-    loadstring(game:HttpGet("https://pastebin.com/raw/GtudyLtE"))();
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ZinityDrops/OwlHubLink/master/OwlHubBack.lua"))();
    
         DiscordLib:Notification("Notification", "Loaded", "Ok")
     end
