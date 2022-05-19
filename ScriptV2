@@ -11,7 +11,7 @@ local UICorner = Instance.new("UICorner")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.Parent = game.Workspace
 
 FrkZ.Name = "FrkZ"
 FrkZ.Parent = ScreenGui
@@ -37,6 +37,7 @@ Load.MouseButton1Down:connect(function()
 end)
 
 
+
 Label.Name = "Label"
 Label.Parent = FrkZ
 Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -53,7 +54,7 @@ UICorner.Parent = FrkZ
 
 -- Scripts:
 
-local function PQGP_fake_script() -- FrkZ.LocalScript 
+local function DCQDNL_fake_script() -- FrkZ.LocalScript 
 	local script = Instance.new('LocalScript', FrkZ)
 
 	local UIS = game:GetService('UserInputService')
@@ -92,8 +93,8 @@ local function PQGP_fake_script() -- FrkZ.LocalScript
 	end)
 	
 end
-coroutine.wrap(PQGP_fake_script)()
-local function IVSE_fake_script() -- Load.LocalScript 
+coroutine.wrap(DCQDNL_fake_script)()
+local function VCDIG_fake_script() -- Load.LocalScript 
 	local script = Instance.new('LocalScript', Load)
 
 	wait('2')
@@ -101,4 +102,4 @@ local function IVSE_fake_script() -- Load.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(IVSE_fake_script)()
+coroutine.wrap(VCDIG_fake_script)()
