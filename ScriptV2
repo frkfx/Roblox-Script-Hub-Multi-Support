@@ -1,25 +1,7 @@
-local function callback(Text)
-    if Text == "Ok" then
-     print ("Answer")
-   elseif Text == ("Cancel") then
-    print ("Answer2")
-    end
-   end
-   
-   local NotificationBindable = Instance.new("BindableFunction")
-   NotificationBindable.OnInvoke = callback
-   --
-   game.StarterGui:SetCore("SendNotification",  {
-    Title = "FrkZ";  
-    Text = "Succsess";
-    Icon = "";
-    Duration = 100;
-    Button1 = "Ok";
-    Button2 = "Cancel";
-    Callback = NotificationBindable;
-   })
-   
-   wait(2)
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local FrkZ = Instance.new("Frame")
@@ -51,8 +33,9 @@ Load.Text = "Load"
 Load.TextColor3 = Color3.fromRGB(255, 255, 255)
 Load.TextSize = 21.000
 Load.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/Script"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/Script", true))()
 end)
+
 
 Label.Name = "Label"
 Label.Parent = FrkZ
@@ -70,7 +53,7 @@ UICorner.Parent = FrkZ
 
 -- Scripts:
 
-local function MCINS_fake_script() -- FrkZ.LocalScript 
+local function PQGP_fake_script() -- FrkZ.LocalScript 
 	local script = Instance.new('LocalScript', FrkZ)
 
 	local UIS = game:GetService('UserInputService')
@@ -109,8 +92,8 @@ local function MCINS_fake_script() -- FrkZ.LocalScript
 	end)
 	
 end
-coroutine.wrap(MCINS_fake_script)()
-local function QLJIKR_fake_script() -- Load.LocalScript 
+coroutine.wrap(PQGP_fake_script)()
+local function IVSE_fake_script() -- Load.LocalScript 
 	local script = Instance.new('LocalScript', Load)
 
 	wait('2')
@@ -118,4 +101,4 @@ local function QLJIKR_fake_script() -- Load.LocalScript
 		script.Parent.Parent.Visible = false
 	end)
 end
-coroutine.wrap(QLJIKR_fake_script)()
+coroutine.wrap(IVSE_fake_script)()
