@@ -28,6 +28,7 @@ end
 local function MakeDraggable(topbarobject, object)
 	local Dragging = nil
 	local DragInput = nil
+	local dragSpeed = 0.25
 	local DragStart = nil
 	local StartPosition = nil
 
