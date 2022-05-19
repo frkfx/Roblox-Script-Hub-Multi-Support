@@ -127,12 +127,9 @@ local btns = serv:Channel("Supported Games Only")
 btns:Button(
     "Dark Hub",
     function(v)
-        SupportedGames=game:GetService('HttpService'):JSONDecode(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/SupportedGames'));
-for _,v in pairs(SupportedGames)do
-    if game.PlaceId==tonumber(v)then
-        loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/'.._))()
-    end;
-end;
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/1e17/Luau-Misc/main/dark-hub-bypass/okbuddy.lua'))()
+wait(2)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init", true))()
 
    
         DiscordLib:Notification("Notification", "Loaded", "Ok")
