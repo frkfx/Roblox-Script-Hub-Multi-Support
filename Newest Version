@@ -1,0 +1,224 @@
+local SolarisLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/sol"))()
+
+--[[SolarisLib:New({
+  Name - Title of the UI <string>
+  FolderToSave - Name of the folder where the UI files will be stored <string>
+})]]
+local win = SolarisLib:New({
+  Name = "FrkZ",
+  FolderToSave = "Saved Scripts"
+})
+
+
+local tab = win:Tab("Player")
+
+
+local sec = tab:Section("UI Toggle (broken)")
+
+
+ sec:Bind("Toggle", Enum.KeyCode.U, false, "BindNormal", function()
+  SolarisLib:Notification("Notification", "Closed")
+  
+  end)
+
+
+local sec = tab:Section("Player")
+
+local slider = sec:Slider("WalkSpeed", 16,500,16,2.5,"Changes The Walkspeed", function(t)
+        print(t)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+
+end)
+
+local slider = sec:Slider("JumpPower", 50,500,50,2.5,"Changes The JumpPower", function(t)
+        print(t)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = t 
+
+end)
+
+
+ 
+
+local tab = win:Tab("Scripts")
+local sec = tab:Section("Universal")
+sec:Button("EzHub", function(v)
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/debug420/Ez-Industries-Launcher-Data/master/Launcher.lua'),true))()
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+
+  sec:Button("Fates Admin", function(v)
+    loadstring(game:HttpGet(" https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua",true))()
+   
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+
+  sec:Button("Infinite Yeild", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source",true))()
+   
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+
+  sec:Button("CMD-X", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))();
+           
+      SolarisLib:Notification("Notification", "Loaded")
+     end)
+
+     sec:Button("ShatterVast Admin", function(v)
+      loadstring(game:HttpGet("   https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub/main/asdaddaasd", true))();
+             
+        SolarisLib:Notification("Notification", "Loaded")
+       end)
+  
+
+  sec:Button("Nto Admin", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TwomadJR/nto/main/admiin"))();
+   
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+
+
+ sec:Button("Owl Hub", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+   
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+
+
+  local sec = tab:Section("Supported Games Only")
+  sec:Button("Dark Hub", function(v)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/'.._))();
+   
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+
+  sec:Button("VG Hub", function(v)
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))();
+   
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+
+
+ 
+sec:Button("Skyas", function(v)
+  loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SkaysGG-2095"))();
+   
+    SolarisLib:Notification("Notification", "Loaded")
+  end)
+ 
+  sec:Button("Funky Friday", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))();
+     
+      SolarisLib:Notification("Notification", "Loaded")
+    end)
+    
+    sec:Button("Da Hood", function(v)
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/Impulseonyoutube/scripts/main/dahood"))();
+       
+        SolarisLib:Notification("Notification", "Loaded")
+      end)
+
+      sec:Button("Bed Wars", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()
+         
+          SolarisLib:Notification("Notification", "Loaded")
+        end)
+      
+        sec:Button("JailBreak", function(v)
+          loadstring(game:HttpGet("https://raw.githubusercontent.com/wawsdasdacx/ohascriptnrrewading/main/jbsaxcriptidk1", true))()
+           
+            SolarisLib:Notification("Notification", "Loaded")
+          end)
+     
+
+
+  local tab = win:Tab("FE Scripts")
+  local sec = tab:Section("Scripts")
+  sec:Button("Trolling GUI", function(v)
+    loadstring(game:HttpGet("https://pastebin.com/raw/wDh1eTdX"))();
+     
+      SolarisLib:Notification("Notification", "Loaded")
+    end)
+
+
+ sec:Button("Trolling UTG", function(v)
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/killermaster9999mega/UTG-V3/main/FE%20UTG%20V3.txt"))();
+     
+      SolarisLib:Notification("Notification", "Loaded")
+    end)
+
+    sec:Button("Sheds Chat Bypasser", function(v)
+      loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))();
+         
+          SolarisLib:Notification("Notification", "Loaded")
+        end)
+
+
+    
+    sec:Button("Aspect Hub", function(v)
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/-Roblox-Multiple-Games-Hub/main/njahndjon", true))();
+         
+          SolarisLib:Notification("Notification", "Loaded")
+        end)
+
+        sec:Button("OP Finality", function(v)
+          loadstring(game:HttpGet(('https://pastebin.com/raw/3axt0ia1'), true))();
+             
+              SolarisLib:Notification("Notification", "Loaded")
+            end)
+       
+ 
+   
+            sec:Button("Server Crasher", function(v)
+for _,s in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+  if s:IsA("Motor6D") and s.Name ~= "Neck" then
+      local fard = s.Parent
+      s:Destroy()
+      fard.CFrame = CFrame.new(9e9 * _,9e9* _,9e9*_)
+      wait()
+  end
+end
+                 
+                  SolarisLib:Notification("Notification", "Loaded")
+                end)
+
+           sec:Button("Audio Destroyer", function(v)
+              loadstring(game:HttpGet(('https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub/main/dasdsadaasddasdad'), true))();
+                     
+                SolarisLib:Notification("Notification", "Loaded")
+               end)
+
+
+               sec:Button("RemX", function(v)
+                loadstring(game:HttpGet(('https://raw.githubusercontent.com/Henry887/RemX-Script-Hub/main/main.lua'), true))();
+                       
+                  SolarisLib:Notification("Notification", "Loaded")
+                 end)
+
+
+                 sec:Button("FE Piolit", function(v)
+                  loadstring(game:HttpGet("https://raw.githubusercontent.com/aran1910/dsaa/main/script"))();
+                         
+                    SolarisLib:Notification("Notification", "Loaded")
+                   end)
+  
+                 
+                   
+    
+                
+ 
+
+
+
+local tab = win:Tab("Offical Testers")
+local sec = tab:Section("")
+local label = sec:Label("FredwardCring")
+local label = sec:Label("ConasCring")
+local label = sec:Label("VerifiedO5")
+
+
+local tab = win:Tab("Developers")
+local sec = tab:Section("")
+local label = sec:Label("frkfx")
+local label = sec:Label("Infinite_Speedy")
+
