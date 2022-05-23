@@ -1,0 +1,100 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local FrkZ = Instance.new("Frame")
+local Load = Instance.new("TextButton")
+local Label = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+FrkZ.Name = "FrkZ"
+FrkZ.Parent = ScreenGui
+FrkZ.BackgroundColor3 = Color3.fromRGB(44, 42, 42)
+FrkZ.BorderColor3 = Color3.fromRGB(255, 255, 255)
+FrkZ.BorderSizePixel = 0
+FrkZ.Position = UDim2.new(0.659151375, 0, 0.474244058, 0)
+FrkZ.Size = UDim2.new(0, 425, 0, 250)
+
+Load.Name = "Load"
+Load.Parent = FrkZ
+Load.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Load.BackgroundTransparency = 1.000
+Load.BorderSizePixel = 0
+Load.Position = UDim2.new(0.26671347, 0, 0.405007988, 0)
+Load.Size = UDim2.new(0, 198, 0, 46)
+Load.Font = Enum.Font.Arial
+Load.Text = "Launch"
+Load.TextColor3 = Color3.fromRGB(255, 255, 255)
+Load.TextSize = 21.000
+Load.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/frkfx/Roblox-Script-Hub-Multi-Support/main/Newest%20Version", true))()
+end)
+
+
+Label.Name = "Label"
+Label.Parent = FrkZ
+Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Label.BackgroundTransparency = 1.000
+Label.BorderSizePixel = 0
+Label.Position = UDim2.new(-0.00150108337, 0, -0.00204730034, 0)
+Label.Size = UDim2.new(0, 425, 0, 45)
+Label.Font = Enum.Font.Arial
+Label.Text = "FrkZ  Launcher"
+Label.TextColor3 = Color3.fromRGB(255, 255, 255)
+Label.TextSize = 16.000
+
+UICorner.Parent = FrkZ
+
+-- Scripts:
+
+local function OWVK_fake_script() -- FrkZ.LocalScript 
+	local script = Instance.new('LocalScript', FrkZ)
+
+	local UIS = game:GetService('UserInputService')
+	local FrkZ = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.25
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(FrkZ, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	FrkZ.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = FrkZ.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(OWVK_fake_script)()
+local function QGBJJI_fake_script() -- Load.LocalScript 
+	local script = Instance.new('LocalScript', Load)
+
+	wait('2')
+	script.Parent.MouseButton1Down:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(QGBJJI_fake_script)()
